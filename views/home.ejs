@@ -1,0 +1,32 @@
+<head>
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto:100,300,400"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="/app.css" />
+</head>
+
+<body>
+  <div class="flex-container">
+    <div class="container">
+      <h1>JOIN US</h1>
+      <P class="lead"
+        >Join <strong><span><%=count%></span></strong> others on our waiting
+        list.
+      </P>
+
+      <form method="POST" action="/register">
+        <input
+          type="text"
+          name="email"
+          class="form"
+          placeholder="Enter Your Email"
+          required
+        />
+        <span id="text"></span>
+
+        <button>Join Now</button>
+      </form>
+    </div>
+  </div>
+</body>
